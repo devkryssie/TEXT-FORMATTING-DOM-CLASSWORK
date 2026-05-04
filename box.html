@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(211, 155, 194);">
+    <h1 style="color: rgb(156, 31, 104); margin-left: 600px; margin-top: 200px;">
+        kryssies text formating
+    </h1>
+
+<input id="greeting" placeholder="type something...."
+style="height: 100px; width:800px; margin-left: 600px; margin-top: 200px;">
+
+<div style="display:flex;">
+    <p style="margin-left: 600px; font-size: 30px;">bold</p>
+    <p id="text" style="margin-left:600px; margin-top:10px; font-weight: bold; font-size: 20px;"></p>
+</div>
+
+<div style="display:flex;">
+    <p style="margin-left: 600px; font-size: 30px;">italic</p>
+    <p id="content" style="margin-left:600px; margin-top:10px; font-style: italic; font-size: 20px;"></p>
+</div>
+
+<div style="display:flex;">
+    <p style="margin-left: 600px; font-size: 30px;">underline</p>
+    <p id="con" style="margin-left:600px; margin-top:10px; font-size: 20px; text-decoration: underline;"></p>
+</div>
+
+<script>
+let greet = document.getElementById("greeting");
+let text = document.getElementById("text");
+let content = document.getElementById("content");
+let con = document.getElementById("con");
+
+greet.addEventListener("input", function () {
+    text.textContent = greet.value;
+    content.textContent = greet.value;
+    con.textContent = greet.value;
+});
+</script>
+
+</body>
+</html>
