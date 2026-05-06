@@ -14,18 +14,24 @@
 style="height: 80px; width:80%; margin: 20px auto; display:block; background-color: rgb(188, 225, 235);">
 
 <div style="display:flex; flex-direction:column; align-items:center; ">
-    <p style="font-size: 40px;">BOLD</p>
+    <p style="font-size: 40px; color:rgb(40, 38, 145)">BOLD</p>
     <p id="text" style="margin-top:10px; font-weight: bold; font-size: 20px;"></p>
 </div>
 
 <div style="display:flex; flex-direction:column; align-items:center; ">
-    <p style="font-size: 40px;">ITALIC</p>
+    <p style="font-size: 40px; color:rgb(177, 43, 77)">ITALIC</p>
     <p id="content" style="margin-top:10px; font-style: italic; font-size: 20px;"></p>
 </div>
 
 <div style="display:flex; flex-direction:column; align-items:center;">
-    <p style="font-size: 40px;">UNDERLINE</p>
+    <p style="font-size: 40px; color: blueviolet">UNDERLINE</p>
     <p id="con" style="margin-top:10px; font-size: 20px; text-decoration: underline;"></p>
+</div>
+
+
+<div style="display:flex; flex-direction:column; align-items:center;">
+    <p style="font-size: 40px; color: rgb(48, 23, 71)">LINE-THROUGTH</p>
+    <p id="strike" style="margin-top:10px; font-size: 20px; text-decoration: line-through;"></p>
 </div>
 
 <script>
@@ -33,11 +39,13 @@ let greet = document.getElementById("greeting");
 let text = document.getElementById("text");
 let content = document.getElementById("content");
 let con = document.getElementById("con");
+let strike = document.getElementById("strike");
 
 greet.addEventListener("input", function () {
     text.textContent = greet.value;
     content.textContent = greet.value;
     con.textContent = greet.value;
+    strike.textContent = greet.value;
 });
 </script>
 
